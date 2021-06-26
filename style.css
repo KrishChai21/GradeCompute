@@ -1,0 +1,122 @@
+body {
+  background-image: linear-gradient(#a9c9ff, #ffbbec);
+  height: 100vh; 
+  /* for gradient  */
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 50px;
+  border-radius: 8px;
+  width: 300px;
+}
+
+.card1 {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 0;
+}
+
+.btn1,.btn2 {
+  border: none;
+  outline: none;
+  background-image: linear-gradient(135deg, #a9c9ff, #ffbbec);
+  width: 40%;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 1rem;
+  margin-top: 50px;
+  transition: all 0.3s ease-in-out;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn1 {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.btn1:hover,.btn2:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.459);
+}
+
+.IM,.CG {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #ff3cac;
+  font-family: "Montserrat", sans-serif;
+}
+
+h3,h4,h5 {
+  text-align: center;
+  position: relative;
+  animation-name: myanimation;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes myanimation{
+    0%{
+         opacity: 0; 
+    }
+
+    100%{
+        opacity: 1; 
+    }
+}
+
+h3 {
+  font-size: 1rem;
+  margin-top: 30px;
+}
+
+h4{
+  font-size: 1rem;
+}
+
+.info {
+  text-align: center;
+  font-size: 0.8rem;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+h5{
+  color: green;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+@media (max-width:600px)
+{
+    .container{
+        width: 225px;
+    }
+
+    .heading{
+        font-size: 1.25rem;
+    }
+
+    .btn1,.btn2{
+        font-size: 0.8em;
+    }
+
+    .label{
+        font-size: 0.8rem;
+    }
+
+    .btn1:hover,.btn2:hover {
+      box-shadow: none;
+
+    }
+}
